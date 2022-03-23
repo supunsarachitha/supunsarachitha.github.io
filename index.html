@@ -447,15 +447,16 @@
 <!-- if using dark theme add this in addition to the main CSS file -->
 <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
 
-                        <div id="ghfeed" class="ghfeed">
-                        </div>
+
+
+<div id="feed"></div>
                         <!--//ghfeed-->
                         <script>
                             GitHubActivity.feed({
                                 username: "supunsarachitha",
-                                repository: "your-repo", // optional
+                                //repository: "your-repo", // optional
                                 selector: "#feed",
-                                limit: 20, // optional
+                                limit: 10, // optional
                                 });
                         </script>
                     </div>
