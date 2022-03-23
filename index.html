@@ -30,6 +30,22 @@
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
+    <!-- github activity -->
+    <link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
+
+    <script type="text/javascript" src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
+    <script type="text/javascript"
+        src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
+
+    <!-- if using dark theme add this in addition to the main CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
+
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
 </head>
 
 <body>
@@ -276,7 +292,8 @@
                                 <h3 class="title"><a
                                         href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/"
                                         target="_blank">Pillar - Free Boootstrap Resume/CV Template for Developers</a>
-                                    <span class="badge badge-theme">Free</span></h3>
+                                    <span class="badge badge-theme">Free</span>
+                                </h3>
                                 <p class="summary">Provide a brief description of your project. Ut enim ad minima
                                     veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
                                     aliquid ex ea commodi consequatu.</p>
@@ -302,7 +319,8 @@
                                 <h3 class="title"><a
                                         href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/"
                                         target="_blank">Nova - Free App Landing Page Template for App Developers</a>
-                                    <span class="badge badge-theme">Free</span></h3>
+                                    <span class="badge badge-theme">Free</span>
+                                </h3>
                                 <p class="summary">Provide a brief description of your project. Lorem ipsum dolor sit
                                     amet, consectetur adipiscing elit. In vel purus enim. Etiam tortor felis, fermentum
                                     ac ultrices sed.</p>
@@ -326,84 +344,124 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Work Experience</h2>
                         <div class="content">
-                            
+
                             <ul>
-                                <li data-section="currentPositionsDetails"><a href="https://www.linkedin.com/company/silverwarepos?trk=public_profile_experience-item_profile-section-card_image-click" data-tracking-control-name="public_profile_experience-item_profile-section-card_image-click" data-tracking-will-navigate=""><img data-ghost-classes="artdeco-entity-image--ghost" data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d" alt="Silverware POS Graphic" src="https://media-exp1.licdn.com/dms/image/C4D0BAQG6usCFtfNvqQ/company-logo_100_100/0/1520608640638?e=1655942400&amp;v=beta&amp;t=It7nSBOIxE_bzHGw9LdPoq_hMvAUIcFvcooMQnG-dDA" /></a>
-                                <div>
-                                <p><strong>Software Engineer</strong></p>
-                                <p><a href="https://www.linkedin.com/company/silverwarepos?trk=public_profile_experience-item_profile-section-card_subtitle-click" data-tracking-control-name="public_profile_experience-item_profile-section-card_subtitle-click" data-tracking-will-navigate="">Silverware POS</a></p>
-                                <div>
-                                <p><time>Mar 2021</time>- Present</p>
-                                <p>Canada</p>
-                                </div>
-                                </div>
+                                <li data-section="currentPositionsDetails"><a
+                                        href="https://www.linkedin.com/company/silverwarepos?trk=public_profile_experience-item_profile-section-card_image-click"
+                                        data-tracking-control-name="public_profile_experience-item_profile-section-card_image-click"
+                                        data-tracking-will-navigate=""><img
+                                            data-ghost-classes="artdeco-entity-image--ghost"
+                                            data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d"
+                                            alt="Silverware POS Graphic"
+                                            src="https://media-exp1.licdn.com/dms/image/C4D0BAQG6usCFtfNvqQ/company-logo_100_100/0/1520608640638?e=1655942400&amp;v=beta&amp;t=It7nSBOIxE_bzHGw9LdPoq_hMvAUIcFvcooMQnG-dDA" /></a>
+                                    <div>
+                                        <p><strong>Software Engineer</strong></p>
+                                        <p><a href="https://www.linkedin.com/company/silverwarepos?trk=public_profile_experience-item_profile-section-card_subtitle-click"
+                                                data-tracking-control-name="public_profile_experience-item_profile-section-card_subtitle-click"
+                                                data-tracking-will-navigate="">Silverware POS</a></p>
+                                        <div>
+                                            <p><time>Mar 2021</time>- Present</p>
+                                            <p>Canada</p>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li data-section="pastPositionsDetails"><a href="https://www.linkedin.com/company/acegets?trk=public_profile_experience-item_profile-section-card_image-click" data-tracking-control-name="public_profile_experience-item_profile-section-card_image-click" data-tracking-will-navigate=""><img data-ghost-classes="artdeco-entity-image--ghost" data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d" alt="ACEGeTS Ltd. Graphic" src="https://media-exp1.licdn.com/dms/image/C560BAQFDNVJv9rpn-g/company-logo_100_100/0/1621372270381?e=1655942400&amp;v=beta&amp;t=Z8d1a4zs6W7-lN0ahIS2Ry5ThI_vECAbMlPOnvpbhMQ" /></a>
-                                <div>
-                                <p><strong>Software Engineer</strong></p>
-                                <p><a href="https://www.linkedin.com/company/acegets?trk=public_profile_experience-item_profile-section-card_subtitle-click" data-tracking-control-name="public_profile_experience-item_profile-section-card_subtitle-click" data-tracking-will-navigate="">ACEGeTS Ltd.</a></p>
-                                <div>
-                                <p><time>Jan 2021</time>-<time>Mar 2021 -&nbsp;</time>3 months</p>
-                                <p>Canada</p>
-                                </div>
-                                </div>
+                                <li data-section="pastPositionsDetails"><a
+                                        href="https://www.linkedin.com/company/acegets?trk=public_profile_experience-item_profile-section-card_image-click"
+                                        data-tracking-control-name="public_profile_experience-item_profile-section-card_image-click"
+                                        data-tracking-will-navigate=""><img
+                                            data-ghost-classes="artdeco-entity-image--ghost"
+                                            data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d"
+                                            alt="ACEGeTS Ltd. Graphic"
+                                            src="https://media-exp1.licdn.com/dms/image/C560BAQFDNVJv9rpn-g/company-logo_100_100/0/1621372270381?e=1655942400&amp;v=beta&amp;t=Z8d1a4zs6W7-lN0ahIS2Ry5ThI_vECAbMlPOnvpbhMQ" /></a>
+                                    <div>
+                                        <p><strong>Software Engineer</strong></p>
+                                        <p><a href="https://www.linkedin.com/company/acegets?trk=public_profile_experience-item_profile-section-card_subtitle-click"
+                                                data-tracking-control-name="public_profile_experience-item_profile-section-card_subtitle-click"
+                                                data-tracking-will-navigate="">ACEGeTS Ltd.</a></p>
+                                        <div>
+                                            <p><time>Jan 2021</time>-<time>Mar 2021 -&nbsp;</time>3 months</p>
+                                            <p>Canada</p>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li data-section="pastPositionsDetails"><a href="https://www.linkedin.com/company/zillione?trk=public_profile_experience-item_profile-section-card_image-click" data-tracking-control-name="public_profile_experience-item_profile-section-card_image-click" data-tracking-will-navigate=""><img data-ghost-classes="artdeco-entity-image--ghost" data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d" alt="ZILLIONe Graphic" src="https://media-exp1.licdn.com/dms/image/C560BAQGYh4rrUYBYOA/company-logo_100_100/0/1612410841881?e=1655942400&amp;v=beta&amp;t=NizSPtelvcMw4BnJaFmkA6wG0iB_v7CAoY4exoJI12o" /></a>
-                                <div>
-                                <p><strong>Senior Software Engineer</strong></p>
-                                <p><a href="https://www.linkedin.com/company/zillione?trk=public_profile_experience-item_profile-section-card_subtitle-click" data-tracking-control-name="public_profile_experience-item_profile-section-card_subtitle-click" data-tracking-will-navigate="">ZILLIONe</a></p>
-                                <div>
-                                <p><time>Dec 2019</time>-<time>Jan 2021 -&nbsp;</time>1 year 2 months</p>
-                                <p>Sri Lanka</p>
-                                </div>
-                                </div>
+                                <li data-section="pastPositionsDetails"><a
+                                        href="https://www.linkedin.com/company/zillione?trk=public_profile_experience-item_profile-section-card_image-click"
+                                        data-tracking-control-name="public_profile_experience-item_profile-section-card_image-click"
+                                        data-tracking-will-navigate=""><img
+                                            data-ghost-classes="artdeco-entity-image--ghost"
+                                            data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d"
+                                            alt="ZILLIONe Graphic"
+                                            src="https://media-exp1.licdn.com/dms/image/C560BAQGYh4rrUYBYOA/company-logo_100_100/0/1612410841881?e=1655942400&amp;v=beta&amp;t=NizSPtelvcMw4BnJaFmkA6wG0iB_v7CAoY4exoJI12o" /></a>
+                                    <div>
+                                        <p><strong>Senior Software Engineer</strong></p>
+                                        <p><a href="https://www.linkedin.com/company/zillione?trk=public_profile_experience-item_profile-section-card_subtitle-click"
+                                                data-tracking-control-name="public_profile_experience-item_profile-section-card_subtitle-click"
+                                                data-tracking-will-navigate="">ZILLIONe</a></p>
+                                        <div>
+                                            <p><time>Dec 2019</time>-<time>Jan 2021 -&nbsp;</time>1 year 2 months</p>
+                                            <p>Sri Lanka</p>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li data-numcurrent="0" data-numpast="3">
-                                <div>
-                                <div><img data-ghost-classes="artdeco-entity-image--ghost" data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d" alt="Prima Management Services (PVT) LTD" src="https://media-exp1.licdn.com/dms/image/C560BAQFjbReGTP3vQQ/company-logo_100_100/0/1638871559501?e=1655942400&amp;v=beta&amp;t=-69w88TSMnz2Y0bIYT5Ha_1I0QFauehqnsYHi9cgJaE" /></div>
-                                <div>Prima Management Services (PVT) LTD</div>
-                                </div>
-                                <ul>
-                                <li data-section="pastPositionsDetails">
-                                <div>
-                                <p><strong>Senior Software Engineer</strong></p>
-                                <div>
-                                <p><time>Mar 2018</time>-<time>Nov 2019 -&nbsp;</time>1 year 9 months</p>
-                                <p>Sri Lanka</p>
-                                </div>
-                                </div>
+                                    <div>
+                                        <div><img data-ghost-classes="artdeco-entity-image--ghost"
+                                                data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d"
+                                                alt="Prima Management Services (PVT) LTD"
+                                                src="https://media-exp1.licdn.com/dms/image/C560BAQFjbReGTP3vQQ/company-logo_100_100/0/1638871559501?e=1655942400&amp;v=beta&amp;t=-69w88TSMnz2Y0bIYT5Ha_1I0QFauehqnsYHi9cgJaE" />
+                                        </div>
+                                        <div>Prima Management Services (PVT) LTD</div>
+                                    </div>
+                                    <ul>
+                                        <li data-section="pastPositionsDetails">
+                                            <div>
+                                                <p><strong>Senior Software Engineer</strong></p>
+                                                <div>
+                                                    <p><time>Mar 2018</time>-<time>Nov 2019 -&nbsp;</time>1 year 9
+                                                        months</p>
+                                                    <p>Sri Lanka</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li data-section="pastPositionsDetails">
+                                            <div>
+                                                <p><strong>Software Engineer</strong></p>
+                                                <div>
+                                                    <p><time>Feb 2017</time>-<time>Mar 2018 -&nbsp;</time>1 year 2
+                                                        months</p>
+                                                    <p>Sri Lanka</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li data-section="pastPositionsDetails">
+                                            <div>
+                                                <p><strong>Associate Software Engineer</strong></p>
+                                                <div>
+                                                    <p><time>Jul 2016</time>-<time>Feb 2017 -&nbsp;</time>8 months</p>
+                                                    <p>Sri Lanka</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li data-section="pastPositionsDetails">
-                                <div>
-                                <p><strong>Software Engineer</strong></p>
-                                <div>
-                                <p><time>Feb 2017</time>-<time>Mar 2018 -&nbsp;</time>1 year 2 months</p>
-                                <p>Sri Lanka</p>
-                                </div>
-                                </div>
+                                <li data-section="pastPositionsDetails"><a
+                                        href="https://www.linkedin.com/company/ministry-of-health-sri-lanka?trk=public_profile_experience-item_profile-section-card_image-click"
+                                        data-tracking-control-name="public_profile_experience-item_profile-section-card_image-click"
+                                        data-tracking-will-navigate=""><img
+                                            data-ghost-classes="artdeco-entity-image--ghost"
+                                            data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d"
+                                            alt="Ministry of Health, Nutrition &amp; Indigenous Medicine - Sri Lanka Graphic"
+                                            src="https://media-exp1.licdn.com/dms/image/C510BAQFl01DQn4mUPg/company-logo_100_100/0/1573695292546?e=1655942400&amp;v=beta&amp;t=KSmvHmxSQPS6GusTMBH23mx2wb5C1ZfWkVczYmuHcHI" /></a>
+                                    <div>
+                                        <p><strong>Management Assistant</strong></p>
+                                        <p>Ministry of Health, Nutrition &amp; Indigenous Medicine - Sri Lanka</p>
+                                        <div>
+                                            <p><time>Jul 2012</time>-<time>Jun 2016 -&nbsp;</time>4 years</p>
+                                            <p>Sri Lanka</p>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li data-section="pastPositionsDetails">
-                                <div>
-                                <p><strong>Associate Software Engineer</strong></p>
-                                <div>
-                                <p><time>Jul 2016</time>-<time>Feb 2017 -&nbsp;</time>8 months</p>
-                                <p>Sri Lanka</p>
-                                </div>
-                                </div>
-                                </li>
-                                </ul>
-                                </li>
-                                <li data-section="pastPositionsDetails"><a href="https://www.linkedin.com/company/ministry-of-health-sri-lanka?trk=public_profile_experience-item_profile-section-card_image-click" data-tracking-control-name="public_profile_experience-item_profile-section-card_image-click" data-tracking-will-navigate=""><img data-ghost-classes="artdeco-entity-image--ghost" data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d" alt="Ministry of Health, Nutrition &amp; Indigenous Medicine - Sri Lanka Graphic" src="https://media-exp1.licdn.com/dms/image/C510BAQFl01DQn4mUPg/company-logo_100_100/0/1573695292546?e=1655942400&amp;v=beta&amp;t=KSmvHmxSQPS6GusTMBH23mx2wb5C1ZfWkVczYmuHcHI" /></a>
-                                <div>
-                                <p><strong>Management Assistant</strong></p>
-                                <p>Ministry of Health, Nutrition &amp; Indigenous Medicine - Sri Lanka</p>
-                                <div>
-                                <p><time>Jul 2012</time>-<time>Jun 2016 -&nbsp;</time>4 years</p>
-                                <p>Sri Lanka</p>
-                                </div>
-                                </div>
-                                </li>
-                                </ul>
+                            </ul>
 
                         </div>
                         <!--//content-->
@@ -415,41 +473,26 @@
 
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">My GitHub</h2>
-                       <!-- Include the library. -->
-<script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-></script>
-
-<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-<link
-   rel="stylesheet"
-   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
-
-<!-- Prepare a container for your calendar. -->
-<div class="calendar">
-    <!-- Loading stuff -->
-    Loading the data just for you.
-</div>
-
-<script>
-    //GitHubCalendar(".calendar", "supunsarachitha");
-    // or enable responsive functionality
-    GitHubCalendar(".calendar", "supunsarachitha", { responsive: true });
-</script>
-
-<link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
-<link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
-
-<script type="text/javascript" src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
-
-<!-- if using dark theme add this in addition to the main CSS file -->
-<link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
+                        <!-- Include the library. -->
 
 
+                        <!-- Prepare a container for your calendar. -->
+                        <div class="calendar">
+                            <!-- Loading stuff -->
+                            Loading the data just for you.
+                        </div>
 
-<div id="feed"></div>
+                        <script>
+                            //GitHubCalendar(".calendar", "supunsarachitha");
+                            // or enable responsive functionality
+                            GitHubCalendar(".calendar", "supunsarachitha", { responsive: true });
+                        </script>
+
+                        
+                    </div>
+
+                    <div class="section-inner shadow-sm rounded">
+                        <div id="feed"></div>
                         <!--//ghfeed-->
                         <script>
                             GitHubActivity.feed({
@@ -457,9 +500,9 @@
                                 //repository: "your-repo", // optional
                                 selector: "#feed",
                                 limit: 10, // optional
-                                });
+                            });
                         </script>
-                    </div>
+                        </div>
                     <!--//secton-inner-->
                 </section>
                 <!--//section-->
@@ -565,8 +608,10 @@
                         <h2 class="heading">Education</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Bachelor of Information Technology</h3>
-                                <h4 class="university"> University of Colombo School of Computing<span class="year">(2012-2015)</span>
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Bachelor of Information
+                                    Technology</h3>
+                                <h4 class="university"> University of Colombo School of Computing<span
+                                        class="year">(2012-2015)</span>
                                 </h4>
                             </div>
                             <!--//item-->
@@ -657,6 +702,7 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
     </script>
+
 
 
 
