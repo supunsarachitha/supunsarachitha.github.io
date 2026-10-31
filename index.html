@@ -1,758 +1,295 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="en" data-theme="dark">
 <head>
-    <title>Supun Liyanaarachchi</title>
-    <!-- Meta -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Supun Liyanaarachchi, a software engineer building thoughtful mobile, web, and cross-platform products.">
+    <meta name="author" content="Supun Liyanaarachchi">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="theme-color" content="#07110f">
+    <link rel="canonical" href="https://supunsarachitha.github.io/">
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
-        type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Supun Liyanaarachchi">
+    <meta property="og:title" content="Supun Liyanaarachchi — Software Engineer">
+    <meta property="og:description" content="Product-minded software engineer building clear, dependable experiences across mobile, web, and the .NET ecosystem.">
+    <meta property="og:url" content="https://supunsarachitha.github.io/">
+    <meta property="og:image" content="https://supunsarachitha.github.io/assets/images/og-card.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Social card for Supun Liyanaarachchi, Software Engineer, with an abstract engineering interface.">
 
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Supun Liyanaarachchi — Software Engineer">
+    <meta name="twitter:description" content="Product-minded software engineer building clear, dependable experiences across mobile, web, and the .NET ecosystem.">
+    <meta name="twitter:image" content="https://supunsarachitha.github.io/assets/images/og-card.png">
+    <meta name="twitter:image:alt" content="Social card for Supun Liyanaarachchi, Software Engineer, with an abstract engineering interface.">
+    <title>Supun Liyanaarachchi — Software Engineer</title>
 
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
-    <!-- github activity css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+    <script>
+        try {
+            const savedTheme = localStorage.getItem('portfolio-theme');
+            if (savedTheme === 'light' || savedTheme === 'dark') {
+                document.documentElement.dataset.theme = savedTheme;
+            }
+        } catch (error) {
+            // The site remains fully usable when storage is unavailable.
+        }
+    </script>
 
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-
-    <!-- github activity -->
-    <link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
-    <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
-
-    <script type="text/javascript" src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
-    <script type="text/javascript"
-        src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
-
-    <!-- if using dark theme add this in addition to the main CSS file -->
-    <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
-
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-
-    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "@id": "https://supunsarachitha.github.io/#profile-page",
+        "url": "https://supunsarachitha.github.io/",
+        "name": "Supun Liyanaarachchi — Software Engineer",
+        "description": "Portfolio of Supun Liyanaarachchi, a software engineer building thoughtful mobile, web, and cross-platform products.",
+        "inLanguage": "en",
+        "dateModified": "2026-10-31",
+        "mainEntity": {
+            "@type": "Person",
+            "@id": "https://supunsarachitha.github.io/#person",
+            "name": "Supun Liyanaarachchi",
+            "jobTitle": "Software Engineer",
+            "url": "https://supunsarachitha.github.io/",
+            "sameAs": [
+                "https://github.com/supunsarachitha",
+                "https://www.linkedin.com/in/supunliynaarachchi/",
+                "https://stackoverflow.com/users/9326622/supun-liyanaarachchi"
+            ],
+            "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Colombo School of Computing"
+            }
+        }
+    }
+    </script>
 </head>
 
 <body>
-    <!-- ******HEADER****** -->
-    <header class="header">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col">
-                    <img class="profile-image img-fluid float-start rounded-circle" height="170" width="170"
-                        src="https://media-exp1.licdn.com/dms/image/C5103AQHEOmIhoT8UpA/profile-displayphoto-shrink_800_800/0/1518529132524?e=2147483647&v=beta&t=quNPEr75dv-O14SA8DXEyCL1YV0U2v4oKPKaS4ZX-0k"
-                        alt="profile image" />
-                    <div class="profile-content">
-                        <h1 class="name">Supun Liyanaarachchi</h1>
-                        <h2 class="desc">Software Engineer</h2>
-                        <ul class="social list-inline">
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/supunliynaarachchi/"><i
-                                        class="fab fa-linkedin-in"></i></a></li>
-                            <li class="list-inline-item"><a href="https://github.com/supunsarachitha"><i
-                                        class="fab fa-github-alt"></i></a></li>
-                            <li class="list-inline-item"><a
-                                    href="https://stackoverflow.com/users/9326622/supun-liyanaarachchi"><i
-                                        class="fab fa-stack-overflow"></i></a></li>
-                            <li class="list-inline-item last-item"><a
-                                    href="https://www.facebook.com/ssliyanaarachchi"><i class="fab fa-codepen"></i></a>
-                            </li>
-                            <li class="list-inline-item"><a href="https://twitter.com/supunsarachitha"><i
-                                        class="fab fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
-                    <!--//profile-->
-                </div>
-                <!--//col-->
-                <div class="col-12 col-md-auto">
-                    <div class="dark-mode-switch d-flex">
-                        <div class="form-check form-switch mx-auto mx-md-0">
-                            <input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
-                            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-                        </div>
-                    </div>
-                    <!--//dark-mode-switch-->
-                    <a class="btn btn-cta-primary" href="https://www.linkedin.com/in/supunliynaarachchi/" target="_blank"><i
-                            class="fas fa-paper-plane"></i> Contact Me</a>
-                </div>
-                <!--//col-->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <svg class="icon-sprite" aria-hidden="true">
+        <symbol id="icon-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+        <symbol id="icon-github" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 7.7c.85 0 1.7.11 2.5.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M6.5 8.5V18M6.5 5.5v.01M10.5 18v-5.5a3 3 0 0 1 6 0V18M10.5 8.5V18"/></symbol>
+        <symbol id="icon-stack" viewBox="0 0 24 24"><path d="m8 16 8 .01M8.5 12.5l8 .8M10 9l7.5 2.2M12 5.8l6.6 4M6 14v5h12v-5"/></symbol>
+        <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20 15.2A8.5 8.5 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z"/></symbol>
+        <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></symbol>
+        <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+        <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 3 2.78 5.63 6.22.9-4.5 4.39 1.06 6.2L12 17.2l-5.56 2.92 1.06-6.2L3 9.53l6.22-.9L12 3Z"/></symbol>
+        <symbol id="icon-fork" viewBox="0 0 24 24"><circle cx="7" cy="5" r="2"/><circle cx="17" cy="5" r="2"/><circle cx="12" cy="19" r="2"/><path d="M7 7v2a3 3 0 0 0 3 3h2m5-5v2a3 3 0 0 1-3 3h-2v5"/></symbol>
+        <symbol id="icon-code" viewBox="0 0 24 24"><path d="m8 9-3 3 3 3M16 9l3 3-3 3M14 5l-4 14"/></symbol>
+        <symbol id="icon-device" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2"/></symbol>
+        <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3-9 5 9 5 9-5-9-5Z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5"/></symbol>
+    </svg>
+
+    <div class="ambient-grid" aria-hidden="true"></div>
+    <div class="ambient-glow ambient-glow--one" aria-hidden="true"></div>
+    <div class="ambient-glow ambient-glow--two" aria-hidden="true"></div>
+
+    <header class="site-header" data-site-header>
+        <div class="shell header-inner">
+            <a class="brand" href="#top" aria-label="Supun Liyanaarachchi, home">
+                <span class="brand-mark">SL</span>
+                <span class="brand-copy"><strong>Supun Liyanaarachchi</strong><span>Software engineer</span></span>
+            </a>
+
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-site-nav>
+                <a href="#work">Work</a>
+                <a href="#profile">Profile</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-button theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme" data-theme-toggle>
+                    <svg class="theme-icon theme-icon--moon"><use href="#icon-moon"/></svg>
+                    <svg class="theme-icon theme-icon--sun"><use href="#icon-sun"/></svg>
+                </button>
+                <a class="header-link" href="https://github.com/supunsarachitha" target="_blank" rel="noreferrer">GitHub<svg><use href="#icon-arrow-up-right"/></svg></a>
+                <button class="icon-button menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation" data-menu-toggle>
+                    <svg class="menu-icon menu-icon--open"><use href="#icon-menu"/></svg>
+                    <svg class="menu-icon menu-icon--close"><use href="#icon-close"/></svg>
+                </button>
             </div>
-            <!--//row-->
         </div>
-        <!--//container-->
     </header>
-    <!--//header-->
 
-    <div class="container sections-wrapper py-5">
-        <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>Experienced Software Engineer with a demonstrated history of working in the information
-                                technology and services industry. Skilled in Mobile Application and Web application
-                                Development. Software engineering professional with a Bachelor of Information Technology
-                                degree from University of Colombo School of Computing. Fluency with multi-platform
-                                software utilizing various programming environments and tools. Working well
-                                independently as well as in a team setting. Hands-on self-starter able to tackle
-                                problems without close supervision. Proven ability of strong problem solving, debugging
-                                and general analytical skills.</p>
-
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
-
-                <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Latest Projects</h2>
-                        <div class="content">
-
-                            <div class="item featured text-center">
-
-                                <div class="featured-image has-ribbon">
-                                    <a href="https://a.fsdn.com/con/app/proj/bing-daily-wallpaper/screenshots/Screenshot_20200530-110023%5B1%5D.jpg/max/max/1"
-                                        target="_blank">
-                                        <img class="img-fluid project-image rounded shadow-sm"
-                                            src="https://a.fsdn.com/con/app/proj/bing-daily-wallpaper/screenshots/Screenshot_20200530-110023%5B1%5D.jpg/max/max/1" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                    </div>
-                                </div>
-
-                                <h3 class="title mb-3"><a
-                                        href="https://github.com/supunsarachitha/Bing-Daily-Wallpaper"
-                                        target="_blank">Bing-Daily-Wallpaper</a>
-                                </h3>
-
-                                <div class="desc text-start">
-                                    <p>Android mobile app Seamlessly update your device wallpaper with Bing photos every day. Wallpaper source is bing daily images. User also can set on device wallpapers.</p>
-                                </div>
-                                <!--//desc-->
-                                <a class="btn btn-cta-secondary"
-                                    href="https://github.com/supunsarachitha/Bing-Daily-Wallpaper"
-                                    target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>
-                            </div>
-                            <!--//item-->
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12"
-                                    href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/"
-                                    target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/project-1.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/"
-                                            target="_blank">CoderPro - Boootstrap Startup Template For Software
-                                            Projects</a></h3>
-                                    <p class="mb-2">You can put one of your secondary projects here. Suspendisse in
-                                        tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus.
-                                        Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget
-                                        iaculis ante dolor non turpis.</p>
-                                    <p><a class="more-link"
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                            <!--//item-->
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12"
-                                    href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/"
-                                    target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/project-2.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/"
-                                            target="_blank">DevCard - Boootstrap Portfolio Template for Software
-                                            Developers</a></h3>
-                                    <p class="mb-2">You can put one of your secondary projects here. Suspendisse in
-                                        tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus.
-                                        Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget
-                                        iaculis ante dolor non turpis.</p>
-                                    <p><a class="more-link"
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                            <!--//item-->
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12"
-                                    href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/"
-                                    target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/project-3.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/"
-                                            target="_blank">Instance - Boootstrap Portfolio Template for Aspiring Full
-                                            Stack Developers</a></h3>
-                                    <p class="mb-2">You can put one of your secondary projects here. Suspendisse in
-                                        tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus.
-                                        Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget
-                                        iaculis ante dolor non turpis.</p>
-                                    <p><a class="more-link"
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                            <!--//item-->
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12"
-                                    href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/"
-                                    target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/project-4.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/"
-                                            target="_blank">Nova Pro - Boootstrap Template for Mobile Startups</a></h3>
-                                    <p class="mb-2">You can put one of your secondary projects here. Suspendisse in
-                                        tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus.</p>
-                                    <p><a class="more-link"
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                            <!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-12"
-                                    href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                    target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/project-5.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                            target="_blank">DevStudio - Boootstrap Template for WebDev Agencies and
-                                            Freelance Developers</a></h3>
-                                    <p class="mb-2"> You can put one of your secondary projects here. Quisque rutrum.
-                                        Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-                                        ultricies nisi.</p>
-                                    <p><a class="more-link"
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                            <!--//item-->
-
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
-
-                <section class="projects section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Other Projects</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/"
-                                        target="_blank">Pillar - Free Boootstrap Resume/CV Template for Developers</a>
-                                    <span class="badge badge-theme">Free</span>
-                                </h3>
-                                <p class="summary">Provide a brief description of your project. Ut enim ad minima
-                                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-                                    aliquid ex ea commodi consequatu.</p>
-                                <p><a class="more-link"
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/"
-                                        target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
-                            </div>
-                            <!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/speciality/devblog-free-bootstrap-4-blog-template-for-developers/"
-                                        target="_blank">DevBlog - Free Boootstrap Blog Template for Developers</a> <span
-                                        class="badge badge-theme">Free</span></h3>
-                                <p class="summary">Provide a brief description of your project. Maecenas ornare
-                                    ultricies risus, in fermentum augue consectetur in. Vestibulum vitae mauris iaculis,
-                                    sollicitudin velit in, molestie nulla. </p>
-                                <p><a class="more-link"
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/speciality/devblog-free-bootstrap-4-blog-template-for-developers/"
-                                        target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
-                            </div>
-                            <!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/"
-                                        target="_blank">Nova - Free App Landing Page Template for App Developers</a>
-                                    <span class="badge badge-theme">Free</span>
-                                </h3>
-                                <p class="summary">Provide a brief description of your project. Lorem ipsum dolor sit
-                                    amet, consectetur adipiscing elit. In vel purus enim. Etiam tortor felis, fermentum
-                                    ac ultrices sed.</p>
-                                <p><a class="more-link"
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/"
-                                        target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
-                            </div>
-                            <!--//item-->
-
-                            <a class="btn btn-cta-secondary" href="https://github.com/supunsarachitha">More on GitHub <i
-                                    class="fas fa-chevron-right pt-1"></i></a>
-
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
-
-                <section class="experience section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-
-                            <ul>
-                                <li data-section="currentPositionsDetails"><a
-                                        href="https://www.linkedin.com/company/silverwarepos?trk=public_profile_experience-item_profile-section-card_image-click"
-                                        data-tracking-control-name="public_profile_experience-item_profile-section-card_image-click"
-                                        data-tracking-will-navigate=""><img
-                                            data-ghost-classes="artdeco-entity-image--ghost"
-                                            data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d"
-                                            alt="Silverware POS Graphic"
-                                            src="https://media-exp1.licdn.com/dms/image/C4D0BAQG6usCFtfNvqQ/company-logo_100_100/0/1520608640638?e=1655942400&amp;v=beta&amp;t=It7nSBOIxE_bzHGw9LdPoq_hMvAUIcFvcooMQnG-dDA" /></a>
-                                    <div>
-                                        <p><strong>Software Engineer</strong></p>
-                                        <p><a href="https://www.linkedin.com/company/silverwarepos?trk=public_profile_experience-item_profile-section-card_subtitle-click"
-                                                data-tracking-control-name="public_profile_experience-item_profile-section-card_subtitle-click"
-                                                data-tracking-will-navigate="">Silverware POS</a></p>
-                                        <div>
-                                            <p><time>Mar 2021</time>- Present</p>
-                                            <p>Canada</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-section="pastPositionsDetails"><a
-                                        href="https://www.linkedin.com/company/acegets?trk=public_profile_experience-item_profile-section-card_image-click"
-                                        data-tracking-control-name="public_profile_experience-item_profile-section-card_image-click"
-                                        data-tracking-will-navigate=""><img
-                                            data-ghost-classes="artdeco-entity-image--ghost"
-                                            data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d"
-                                            alt="ACEGeTS Ltd. Graphic"
-                                            src="https://media-exp1.licdn.com/dms/image/C560BAQFDNVJv9rpn-g/company-logo_100_100/0/1621372270381?e=1655942400&amp;v=beta&amp;t=Z8d1a4zs6W7-lN0ahIS2Ry5ThI_vECAbMlPOnvpbhMQ" /></a>
-                                    <div>
-                                        <p><strong>Software Engineer</strong></p>
-                                        <p><a href="https://www.linkedin.com/company/acegets?trk=public_profile_experience-item_profile-section-card_subtitle-click"
-                                                data-tracking-control-name="public_profile_experience-item_profile-section-card_subtitle-click"
-                                                data-tracking-will-navigate="">ACEGeTS Ltd.</a></p>
-                                        <div>
-                                            <p><time>Jan 2021</time>-<time>Mar 2021 -&nbsp;</time>3 months</p>
-                                            <p>Canada</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-section="pastPositionsDetails"><a
-                                        href="https://www.linkedin.com/company/zillione?trk=public_profile_experience-item_profile-section-card_image-click"
-                                        data-tracking-control-name="public_profile_experience-item_profile-section-card_image-click"
-                                        data-tracking-will-navigate=""><img
-                                            data-ghost-classes="artdeco-entity-image--ghost"
-                                            data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d"
-                                            alt="ZILLIONe Graphic"
-                                            src="https://media-exp1.licdn.com/dms/image/C560BAQGYh4rrUYBYOA/company-logo_100_100/0/1612410841881?e=1655942400&amp;v=beta&amp;t=NizSPtelvcMw4BnJaFmkA6wG0iB_v7CAoY4exoJI12o" /></a>
-                                    <div>
-                                        <p><strong>Senior Software Engineer</strong></p>
-                                        <p><a href="https://www.linkedin.com/company/zillione?trk=public_profile_experience-item_profile-section-card_subtitle-click"
-                                                data-tracking-control-name="public_profile_experience-item_profile-section-card_subtitle-click"
-                                                data-tracking-will-navigate="">ZILLIONe</a></p>
-                                        <div>
-                                            <p><time>Dec 2019</time>-<time>Jan 2021 -&nbsp;</time>1 year 2 months</p>
-                                            <p>Sri Lanka</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-numcurrent="0" data-numpast="3">
-                                    <div>
-                                        <div><img data-ghost-classes="artdeco-entity-image--ghost"
-                                                data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d"
-                                                alt="Prima Management Services (PVT) LTD"
-                                                src="https://media-exp1.licdn.com/dms/image/C560BAQFjbReGTP3vQQ/company-logo_100_100/0/1638871559501?e=1655942400&amp;v=beta&amp;t=-69w88TSMnz2Y0bIYT5Ha_1I0QFauehqnsYHi9cgJaE" />
-                                        </div>
-                                        <div>Prima Management Services (PVT) LTD</div>
-                                    </div>
-                                    <ul>
-                                        <li data-section="pastPositionsDetails">
-                                            <div>
-                                                <p><strong>Senior Software Engineer</strong></p>
-                                                <div>
-                                                    <p><time>Mar 2018</time>-<time>Nov 2019 -&nbsp;</time>1 year 9
-                                                        months</p>
-                                                    <p>Sri Lanka</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li data-section="pastPositionsDetails">
-                                            <div>
-                                                <p><strong>Software Engineer</strong></p>
-                                                <div>
-                                                    <p><time>Feb 2017</time>-<time>Mar 2018 -&nbsp;</time>1 year 2
-                                                        months</p>
-                                                    <p>Sri Lanka</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li data-section="pastPositionsDetails">
-                                            <div>
-                                                <p><strong>Associate Software Engineer</strong></p>
-                                                <div>
-                                                    <p><time>Jul 2016</time>-<time>Feb 2017 -&nbsp;</time>8 months</p>
-                                                    <p>Sri Lanka</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li data-section="pastPositionsDetails"><a
-                                        href="https://www.linkedin.com/company/ministry-of-health-sri-lanka?trk=public_profile_experience-item_profile-section-card_image-click"
-                                        data-tracking-control-name="public_profile_experience-item_profile-section-card_image-click"
-                                        data-tracking-will-navigate=""><img
-                                            data-ghost-classes="artdeco-entity-image--ghost"
-                                            data-ghost-url="https://static-exp1.licdn.com/sc/h/3dtfvv2esz58o2zimai1h3v2d"
-                                            alt="Ministry of Health, Nutrition &amp; Indigenous Medicine - Sri Lanka Graphic"
-                                            src="https://media-exp1.licdn.com/dms/image/C510BAQFl01DQn4mUPg/company-logo_100_100/0/1573695292546?e=1655942400&amp;v=beta&amp;t=KSmvHmxSQPS6GusTMBH23mx2wb5C1ZfWkVczYmuHcHI" /></a>
-                                    <div>
-                                        <p><strong>Management Assistant</strong></p>
-                                        <p>Ministry of Health, Nutrition &amp; Indigenous Medicine - Sri Lanka</p>
-                                        <div>
-                                            <p><time>Jul 2012</time>-<time>Jun 2016 -&nbsp;</time>4 years</p>
-                                            <p>Sri Lanka</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
-                <section class="github section">
-
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">My GitHub</h2>
-                        <!-- Include the library. -->
-
-
-                        <!-- Prepare a container for your calendar. -->
-                        <div class="calendar">
-                            <!-- Loading stuff -->
-                            Loading the data just for you.
-                        </div>
-
-                        <script>
-                            //GitHubCalendar(".calendar", "supunsarachitha");
-                            // or enable responsive functionality
-                            GitHubCalendar(".calendar", "supunsarachitha", { responsive: true });
-                        </script>
-
-                        
-                    </div>
-
-                    <div class="section-inner shadow-sm rounded">
-                        <div id="feed"></div>
-                        <!--//ghfeed-->
-                        <script>
-                            GitHubActivity.feed({
-                                username: "supunsarachitha",
-                                //repository: "your-repo", // optional
-                                selector: "#feed",
-                                limit: 10, // optional
-                            });
-                        </script>
-                        </div>
-                    <!--//secton-inner-->
-                </section>
-                <!--//section-->
+    <main id="main-content">
+        <section class="hero shell" id="top" aria-labelledby="hero-title">
+            <div class="hero-copy" data-reveal>
+                <p class="eyebrow"><span class="status-dot"></span> Software engineer · Canada</p>
+                <h1 id="hero-title">Engineering calm into <em>complex software.</em></h1>
+                <p class="hero-intro">I’m Supun, a product-minded engineer building clear, dependable experiences across mobile, web, and the .NET ecosystem.</p>
+                <div class="hero-actions">
+                    <a class="button button--primary" href="#work">Explore my work<svg><use href="#icon-arrow-right"/></svg></a>
+                    <a class="button button--ghost" href="https://www.linkedin.com/in/supunliynaarachchi/" target="_blank" rel="noreferrer">Connect on LinkedIn<svg><use href="#icon-arrow-up-right"/></svg></a>
+                </div>
+                <ul class="focus-list" aria-label="Core technologies">
+                    <li>C# / .NET</li><li>.NET MAUI</li><li>Web platforms</li><li>SwiftUI</li>
+                </ul>
             </div>
-            <!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Canada
-                                </li>
-                                
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a
-                                        href="#">https://supunsarachitha.github.io/</a></li>
-                            </ul>
-                        </div>
-                        <!--//content-->
+
+            <div class="hero-visual" role="img" aria-label="A visual map of Supun's engineering focus across mobile, web, and .NET" data-reveal data-reveal-delay="1">
+                <div class="system-window">
+                    <div class="system-window__bar"><span></span><span></span><span></span><p>supun.dev / workspace</p></div>
+                    <div class="system-canvas">
+                        <div class="coordinate coordinate--top">PRODUCT / ENGINEERING</div>
+                        <div class="coordinate coordinate--side">43.6532° N</div>
+                        <div class="orbit orbit--outer"></div><div class="orbit orbit--inner"></div>
+                        <div class="orbit-axis orbit-axis--x"></div><div class="orbit-axis orbit-axis--y"></div>
+                        <div class="monogram"><span>SL</span><small>build / learn / refine</small></div>
+                        <span class="orbit-node orbit-node--one">Mobile</span>
+                        <span class="orbit-node orbit-node--two">Web</span>
+                        <span class="orbit-node orbit-node--three">.NET</span>
                     </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//aside-->
-
-                <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">
-                            <!-- <p class="intro">
-                                Intro about your skills goes here. Keep the list lean and only show your primary
-                                skillset. You can always provide a link to your Linkedin or Github profile so people can
-                                get more info there.</p> -->
-
-                            <div class="skillset">
-
-                                <div class="item">
-                                    <h3 class="level-title">C#<span class="level-label"
-                                            data-bs-toggle="tooltip" data-bs-placement="left"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Expert</span></h3>
-
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 96%"
-                                            aria-valuenow="96" aria-valuemin="0" aria-valuemax="96"></div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">HTML5 &amp; CSS3<span class="level-label"
-                                            data-bs-toggle="tooltip" data-bs-placement="left"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 96%"
-                                            aria-valuenow="96" aria-valuemin="0" aria-valuemax="96"></div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">VB.net<span class="level-label"
-                                            data-bs-toggle="tooltip" data-bs-placement="left"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Expert</span></h3>
-
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 96%"
-                                            aria-valuenow="96" aria-valuemin="0" aria-valuemax="96"></div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Javascript &amp; Angular<span class="level-label"
-                                            data-bs-toggle="tooltip" data-bs-placement="left"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 95%"
-                                            aria-valuenow="95" aria-valuemin="0" aria-valuemax="95"></div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-                                <div class="item">
-                                    <h3 class="level-title">Dart<span class="level-label"
-                                            data-bs-toggle="tooltip" data-placement="left"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%"
-                                            aria-valuenow="86" aria-valuemin="0" aria-valuemax="96"></div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-                                <div class="item">
-                                    <h3 class="level-title">Python<span class="level-label"
-                                            data-bs-toggle="tooltip" data-placement="left"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%"
-                                            aria-valuenow="86" aria-valuemin="0" aria-valuemax="96"></div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Xamarin<span class="level-label"
-                                            data-bs-toggle="tooltip" data-placement="left"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%"
-                                            aria-valuenow="86" aria-valuemin="0" aria-valuemax="96"></div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Flutter<span class="level-label"
-                                            data-bs-toggle="tooltip" data-placement="left"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%"
-                                            aria-valuenow="86" aria-valuemin="0" aria-valuemax="96"></div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <p><a class="more-link" href="https://github.com/supunsarachitha"><i class="fas fa-external-link-alt"></i>More on
-                                        GitHub</a></p>
-                            </div>
-                        </div>
-                        <!--//content-->
+                    <div class="signal-panel">
+                        <p class="signal-panel__label">Recent signal</p>
+                        <div class="signal-item"><span>01</span><strong>SmartSurvay</strong><i></i></div>
+                        <div class="signal-item"><span>02</span><strong>FalconNotes</strong><i></i></div>
+                        <div class="signal-item"><span>03</span><strong>PlantHelper</strong><i></i></div>
                     </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//section-->
-
-
-                <aside class="education aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Bachelor of Information
-                                    Technology</h3>
-                                <h4 class="university"> University of Colombo School of Computing<span
-                                        class="year">(2012-2015)</span>
-                                </h4>
-                            </div>
-                            <!--//item-->
-                            <!-- <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Computer Science</h3>
-                                <h4 class="university">University of Bristol <span class="year">(2013-2017)</span></h4>
-                            </div> -->
-                            <!--//item-->
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//section-->
-
-                <aside class="languages aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Professional Proficiency <br class="visible-xs" /><i
-                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                            class="fas fa-star"></i> </span>
-                                </li>
-                                <!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Sinhala:</strong></span>
-                                    <span class="level"> Native Speaker <br class="visible-sm visible-xs" /><i
-                                        class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                        class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                        class="fas fa-star"></i> </span>
-                                </li>
-                                <!--//item-->
-                            </ul>
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//section-->
-
-                <aside class="blog aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Latest Blog Posts</h2>
-                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss"
-                                target="_blank">Vanilla RSS plugin</a> to pull in your blog post feeds.</p>
-                        <div id="rss-feeds" class="content">
-
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//section-->
-
-
+                </div>
+                <p class="visual-caption"><span>Live workspace</span> / turning ideas into useful systems</p>
             </div>
-            <!--//secondary-->
-        </div>
-        <!--//row-->
-    </div>
-    <!--//masonry-->
+        </section>
 
-    <!-- ******FOOTER****** -->
-    <footer class="footer">
-        <div class="container text-center">
-            <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
-                    href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        <section class="work-section" id="work" aria-labelledby="work-title">
+            <div class="shell">
+                <div class="section-heading" data-reveal>
+                    <div>
+                        <p class="section-kicker">01 / Recent work</p>
+                        <h2 id="work-title">Six recent builds,<br><em>straight from GitHub.</em></h2>
+                    </div>
+                    <div class="section-heading__aside">
+                        <p>A live selection of recent public, original repositories.</p>
+                        <p class="sync-status" aria-live="polite" data-repo-status><span></span> Verified snapshot · Oct 31, 2026</p>
+                    </div>
+                </div>
+
+                <div class="repo-grid" data-repo-grid>
+                    <article class="repo-card repo-card--feature" data-reveal>
+                        <div class="repo-card__top"><span class="repo-index">01</span><span class="repo-badge">Latest</span></div>
+                        <div class="repo-card__body">
+                            <p class="repo-language"><span style="--language-color:#b8f529"></span>C#</p>
+                            <h3><a href="https://github.com/supunsarachitha/SmartSurvay" target="_blank" rel="noreferrer">SmartSurvay<svg><use href="#icon-arrow-up-right"/></svg></a></h3>
+                            <p>SmartSurvey is a .NET survey and feedback platform for creating, publishing, and managing surveys with clear response tracking and reporting.</p>
+                        </div>
+                        <div class="repo-card__footer">
+                            <time datetime="2026-10-29T20:13:28Z">Updated Oct 29, 2026</time>
+                            <div class="repo-stats"><span aria-label="1 star"><svg><use href="#icon-star"/></svg>1</span><span aria-label="0 forks"><svg><use href="#icon-fork"/></svg>0</span></div>
+                            <a class="repo-demo" href="https://supunsarachitha.github.io/SmartSurvay/" target="_blank" rel="noreferrer">Live preview<svg><use href="#icon-arrow-up-right"/></svg></a>
+                        </div>
+                    </article>
+
+                    <article class="repo-card repo-card--secondary" data-reveal>
+                        <div class="repo-card__top"><span class="repo-index">02</span></div>
+                        <div class="repo-card__body">
+                            <p class="repo-language"><span style="--language-color:#b8f529"></span>C#</p>
+                            <h3><a href="https://github.com/supunsarachitha/FalconNotes" target="_blank" rel="noreferrer">FalconNotes<svg><use href="#icon-arrow-up-right"/></svg></a></h3>
+                            <p>A cross-platform .NET MAUI Blazor Hybrid notes app focused on private, secure offline writing and encrypted local storage.</p>
+                        </div>
+                        <div class="repo-card__footer">
+                            <time datetime="2026-10-29T19:43:05Z">Updated Oct 29, 2026</time>
+                            <div class="repo-stats"><span aria-label="0 stars"><svg><use href="#icon-star"/></svg>0</span><span aria-label="0 forks"><svg><use href="#icon-fork"/></svg>0</span></div>
+                            <a class="repo-demo" href="https://supunsarachitha.github.io/FalconNotes/" target="_blank" rel="noreferrer">Live preview<svg><use href="#icon-arrow-up-right"/></svg></a>
+                        </div>
+                    </article>
+
+                    <article class="repo-card" data-reveal>
+                        <div class="repo-card__top"><span class="repo-index">03</span></div>
+                        <div class="repo-card__body"><p class="repo-language"><span style="--language-color:#b8f529"></span>C#</p><h3><a href="https://github.com/supunsarachitha/PlantHelper" target="_blank" rel="noreferrer">PlantHelper<svg><use href="#icon-arrow-up-right"/></svg></a></h3><p>A focused plant-care companion for tracking watering schedules, maintenance, and the routines that keep plants healthy.</p></div>
+                        <div class="repo-card__footer"><time datetime="2026-10-29T14:58:09Z">Updated Oct 29, 2026</time><div class="repo-stats"><span aria-label="0 stars"><svg><use href="#icon-star"/></svg>0</span><span aria-label="0 forks"><svg><use href="#icon-fork"/></svg>0</span></div><a class="repo-demo" href="https://supunsarachitha.github.io/PlantHelper/" target="_blank" rel="noreferrer">Live preview<svg><use href="#icon-arrow-up-right"/></svg></a></div>
+                    </article>
+
+                    <article class="repo-card" data-reveal>
+                        <div class="repo-card__top"><span class="repo-index">04</span></div>
+                        <div class="repo-card__body"><p class="repo-language"><span style="--language-color:#b8f529"></span>C#</p><h3><a href="https://github.com/supunsarachitha/MapleNotes" target="_blank" rel="noreferrer">MapleNotes<svg><use href="#icon-arrow-up-right"/></svg></a></h3><p>Privacy-first, self-hosted notes with end-to-end encryption, Markdown, backups, and secure multi-user accounts.</p></div>
+                        <div class="repo-card__footer"><time datetime="2026-10-29T14:58:03Z">Updated Oct 29, 2026</time><div class="repo-stats"><span aria-label="2 stars"><svg><use href="#icon-star"/></svg>2</span><span aria-label="0 forks"><svg><use href="#icon-fork"/></svg>0</span></div><a class="repo-demo" href="https://supunsarachitha.github.io/MapleNotes/" target="_blank" rel="noreferrer">Live preview<svg><use href="#icon-arrow-up-right"/></svg></a></div>
+                    </article>
+
+                    <article class="repo-card" data-reveal>
+                        <div class="repo-card__top"><span class="repo-index">05</span></div>
+                        <div class="repo-card__body"><p class="repo-language"><span style="--language-color:#f05138"></span>Swift</p><h3><a href="https://github.com/supunsarachitha/MacCleanup" target="_blank" rel="noreferrer">MacCleanup<svg><use href="#icon-arrow-up-right"/></svg></a></h3><p>A native SwiftUI macOS utility that finds clutter, previews what it will remove, and cleans only after confirmation.</p></div>
+                        <div class="repo-card__footer"><time datetime="2026-10-11T16:03:59Z">Updated Oct 11, 2026</time><div class="repo-stats"><span aria-label="0 stars"><svg><use href="#icon-star"/></svg>0</span><span aria-label="0 forks"><svg><use href="#icon-fork"/></svg>0</span></div><a class="repo-demo" href="https://supunsarachitha.github.io/MacCleanup/" target="_blank" rel="noreferrer">Live preview<svg><use href="#icon-arrow-up-right"/></svg></a></div>
+                    </article>
+
+                    <article class="repo-card" data-reveal>
+                        <div class="repo-card__top"><span class="repo-index">06</span></div>
+                        <div class="repo-card__body"><p class="repo-language"><span style="--language-color:#b8f529"></span>C#</p><h3><a href="https://github.com/supunsarachitha/MobileNetworkInfo_V2" target="_blank" rel="noreferrer">MobileNetworkInfo_V2<svg><use href="#icon-arrow-up-right"/></svg></a></h3><p>A .NET MAUI Android dashboard for inspecting network, device, battery, and sensor diagnostics at a glance.</p></div>
+                        <div class="repo-card__footer"><time datetime="2026-10-11T11:24:51Z">Updated Oct 11, 2026</time><div class="repo-stats"><span aria-label="2 stars"><svg><use href="#icon-star"/></svg>2</span><span aria-label="0 forks"><svg><use href="#icon-fork"/></svg>0</span></div><a class="repo-demo" href="https://supunsarachitha.github.io/MobileNetworkInfo_V2/" target="_blank" rel="noreferrer">Live preview<svg><use href="#icon-arrow-up-right"/></svg></a></div>
+                    </article>
+
+                </div>
+
+                <div class="work-footer" data-reveal>
+                    <p>More experiments, utilities, and open-source work live on GitHub.</p>
+                    <a class="text-link" href="https://github.com/supunsarachitha?tab=repositories" target="_blank" rel="noreferrer">View all public repositories<svg><use href="#icon-arrow-up-right"/></svg></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-section shell" id="profile" aria-labelledby="profile-title">
+            <div class="profile-intro" data-reveal>
+                <p class="section-kicker">02 / Profile</p>
+                <h2 id="profile-title">A practical engineer with a <em>product lens.</em></h2>
+                <div class="profile-copy">
+                    <p>My background spans mobile applications, web products, and business software. I enjoy turning dense requirements into interfaces and systems that feel direct, useful, and maintainable.</p>
+                    <p>I work comfortably across the stack, with deep roots in C# and .NET and an ongoing curiosity for the right tool—whether that is MAUI, React, Flutter, Python, or native SwiftUI.</p>
+                </div>
+            </div>
+
+            <div class="capability-grid">
+                <article class="capability-card" data-reveal><span class="capability-card__number">01</span><svg><use href="#icon-code"/></svg><h3>Product engineering</h3><p>From domain logic and APIs to the final interaction, with an eye for the whole product.</p><ul><li>C#</li><li>.NET</li><li>ASP.NET Core</li><li>React</li></ul></article>
+                <article class="capability-card" data-reveal data-reveal-delay="1"><span class="capability-card__number">02</span><svg><use href="#icon-device"/></svg><h3>Mobile experiences</h3><p>Cross-platform and native applications shaped around real devices and everyday use.</p><ul><li>.NET MAUI</li><li>Flutter</li><li>Xamarin</li><li>SwiftUI</li></ul></article>
+                <article class="capability-card" data-reveal data-reveal-delay="2"><span class="capability-card__number">03</span><svg><use href="#icon-layers"/></svg><h3>Clear systems</h3><p>Practical architecture, readable interfaces, and deliberate choices over needless complexity.</p><ul><li>Web apps</li><li>APIs</li><li>Data</li><li>Tooling</li></ul></article>
+            </div>
+
+            <div class="credentials" data-reveal>
+                <div class="credentials__lead"><p class="section-kicker">Background / at a glance</p><p>Engineering software across Canada and Sri Lanka, with experience spanning mobile, web, and operational systems.</p></div>
+                <dl class="credential-list">
+                    <div><dt>Education</dt><dd>Bachelor of Information Technology<br><span>University of Colombo School of Computing · 2012—2015</span></dd></div>
+                    <div><dt>Languages</dt><dd>English <span>Professional</span><br>Sinhala <span>Native</span></dd></div>
+                    <div><dt>Based in</dt><dd>Canada<br><span>Originally from Sri Lanka</span></dd></div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="shell contact-inner" data-reveal>
+                <p class="section-kicker">03 / Start a conversation</p>
+                <div class="contact-main">
+                    <h2 id="contact-title">Have a product problem worth <em>untangling?</em></h2>
+                    <a class="contact-orb" href="https://www.linkedin.com/in/supunliynaarachchi/" target="_blank" rel="noreferrer" aria-label="Connect with Supun on LinkedIn"><span>Let’s talk</span><svg><use href="#icon-arrow-up-right"/></svg></a>
+                </div>
+                <p class="contact-note">The best place to reach me is LinkedIn. For code, experiments, and the latest public work, follow along on GitHub.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <div><span class="brand-mark brand-mark--small">SL</span><p>Designed and built with care.<br>© <span data-current-year>2026</span> Supun Liyanaarachchi.</p></div>
+            <div class="footer-links" aria-label="Social links">
+                <a href="https://github.com/supunsarachitha" target="_blank" rel="noreferrer"><svg><use href="#icon-github"/></svg>GitHub</a>
+                <a href="https://www.linkedin.com/in/supunliynaarachchi/" target="_blank" rel="noreferrer"><svg><use href="#icon-linkedin"/></svg>LinkedIn</a>
+                <a href="https://stackoverflow.com/users/9326622/supun-liyanaarachchi" target="_blank" rel="noreferrer"><svg><use href="#icon-stack"/></svg>Stack Overflow</a>
+            </div>
+            <a class="back-to-top" href="#top">Back to top <span>↑</span></a>
         </div>
-        <!--//container-->
     </footer>
-    <!--//footer-->
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script>
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-    </script>
-
-
-
-
+    <script src="assets/js/main.js" defer></script>
 </body>
-
 </html>
