@@ -6,7 +6,11 @@ A responsive, buildless portfolio hosted on GitHub Pages at
 The site is intentionally lightweight: semantic HTML, custom CSS, and vanilla
 JavaScript. It includes a verified static snapshot of six recent public
 repositories and refreshes that curated list from the GitHub API when a visitor
-loads the page.
+loads the page. The list is the six most recently updated public repositories that
+are original (not forks) and not this site's own repository, `Electronic_Helper` or
+`Mobile_Journal_app`; when the snapshot is refreshed, update the card order, the
+"Recent signal" names, the snapshot date, `dateModified` in the page's JSON-LD and
+`lastmod` in `sitemap.xml` together.
 
 ## Local preview
 

@@ -4,7 +4,7 @@ document.documentElement.classList.add("js");
 
 const GITHUB_USER = "supunsarachitha";
 const REPOSITORY_ENDPOINT = `https://api.github.com/users/${GITHUB_USER}/repos?per_page=100&sort=updated&type=owner`;
-const EXCLUDED_REPOSITORIES = new Set(["Electronic_Helper", "Mobile_Journal_app"]);
+const EXCLUDED_REPOSITORIES = new Set(["Electronic_Helper", "Mobile_Journal_app", `${GITHUB_USER}.github.io`]);
 
 const languageColors = {
     "C#": "#b8f529",
